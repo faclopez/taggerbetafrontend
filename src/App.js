@@ -1,22 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import {ScannerView} from './components/Scanner'
+import {OrderUpdate} from './components/Orders'
+
+
+
+
+
+
 
 function App() {
+
+const [scanResult, setScanResult] = useState('No Scan Result')
+
+const changeHandle = e => {
+  console.log(e)
+  setScanResult(e)
+}
+
+  
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          CHD - Tagger
+          <ScannerView onChange={e => changeHandle(e)}/>
+          <OrderUpdate id={scanResult}/>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
