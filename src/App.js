@@ -25,7 +25,7 @@ const changeHandle = e => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          CHD - Tagger
+          CHD - Tagger V2
           <ScannerView onChange={e => changeHandle(e)}/>
           <OrderUpdate id={scanResult}/>
         </p>
