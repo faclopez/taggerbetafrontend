@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import {ScannerView} from './components/Scanner'
 import {useOrderUpdate} from './components/Orders'
@@ -28,14 +28,12 @@ const {tag, render} = useOrderUpdate()
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/*<img src={logo} className="App-logo" alt="logo" />*/}
         <p>
           CHD - Tagger V2
         </p>
-         {/*<OrderUpdate id={scanResult}/>*/}
          {render}
-         
-        {/*<ScannerView onChange={e => changeHandle(e)}/>*/}
+        
         <ScannerView tag={tag}/>
         <span></span>
         <br></br>
