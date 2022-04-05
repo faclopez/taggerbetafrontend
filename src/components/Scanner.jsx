@@ -37,7 +37,7 @@ export const ScannerView = (props) => {
                   setTimeout(()=> {
                       setTagStatus('Ready to Scan')
                       setQrscan('')
-                }, 2000)
+                }, 1500)
                 })
 
             
