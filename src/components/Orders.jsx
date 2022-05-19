@@ -27,6 +27,7 @@ export const useOrderUpdate = () => {
             <option value="Needs recast">Needs recast</option>
             <option value="Design issue">Design issue</option>
             <option value="Hold">Hold</option>
+            <option value="Scanner Test">Scanner Test</option>
           </select>
        {/*<button> Update Order </button>*/}
         
