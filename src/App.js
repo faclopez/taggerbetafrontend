@@ -20,7 +20,7 @@ function App() {
 const {tag, render} = useOrderUpdate()
 
 /*const changeHandle = e => {
-  setScanResult(e)
+  setScanResult(e) 
 }*/
 
 
