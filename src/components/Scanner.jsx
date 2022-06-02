@@ -48,7 +48,7 @@ export const ScannerView = (props) => {
     console.error(err)
     }
 
-    //from orde
+    //from order
 
 //
 
