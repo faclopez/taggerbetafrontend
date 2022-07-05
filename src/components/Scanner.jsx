@@ -37,7 +37,7 @@ export const ScannerView = (props) => {
                   setTimeout(()=> {
                       setTagStatus('Ready to Scan')
                       setQrscan('')
-                }, 750)
+                }, 1000)
                 })
 
             
@@ -63,7 +63,7 @@ export const ScannerView = (props) => {
             <center>
             <div style={{marginTop:30}}>
                 <QrScan
-                    delay={550}
+                    delay={750}
                     onError={handleError}
                     onScan={handleScan}
                     style={{ height: 240, width: 320 }}
